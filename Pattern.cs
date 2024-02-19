@@ -156,26 +156,29 @@ public class Pattern
         }
     }
 
-    public void printPattern8(int rows){
+    public void printPattern8(int rows)
+    {
         for (int i = 0; i < rows; i++)
         {
-            
-            // Print asterisks
-            for (int k = 2 * i + 1; k > 0 ; k++)
+            // Print spaces
+            for (int j = 0; j < i; j++)
             {
-                Console.Write("");
+                Console.Write(" ");
+            }
+
+            // Print asterisks
+            for (int k = 0; k < 2 * (rows - i) - 1; k++)
+            {
+                Console.Write("*");
             }
 
             // Move to the next line
             Console.WriteLine();
-            for (int j = rows - i - 1; j > 0; j++)
-            {
-                Console.Write("0");
-            }
-
-            
         }
     }
+
+
+    
 
 
 
