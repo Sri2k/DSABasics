@@ -2,8 +2,8 @@
 {
     private static void Main(string[] args)
     {
-        Maths maths = new();
-        Console.WriteLine(maths.GCDOrHCF(24,12));
-
+        BasicRecursion recursion = new();
+        Console.WriteLine(recursion.fibNumber(5));
     }
+    
 }

@@ -1,5 +1,3 @@
-using System.Diagnostics.Metrics;
-
 public class Maths
 {
     public void Reverse(int number)
@@ -42,4 +40,5 @@ public class Maths
         }
         return default;
     }
+    
 }
