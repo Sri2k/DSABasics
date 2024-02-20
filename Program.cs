@@ -2,8 +2,9 @@
 {
     private static void Main(string[] args)
     {
-        BasicRecursion recursion = new();
-        Console.WriteLine(recursion.fibNumber(5));
+        BasicHashing hashing = new();
+        string input = "dammmmzyz";
+        hashing.Max_Min_Chars(input);
     }
     
 }
