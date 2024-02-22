@@ -6,6 +6,16 @@ public class Sorting{
         return array;
     }
 
+    public int[] InsertionSort(int[] array){
+        for(int i=0;i<array.Length;i++){
+            for(int j= i + 1; j>0;j--){
+                if(array[j]<array[j-1]){
+                    Swap(array,j,j-1);
+                }
+            }
+        }
+        return array;
+    }
     public int[] BubbleSort(int[] array){
         for(int i=0;i<array.Length;i++){
             for(int j=0;j<array.Length-i;j++){
