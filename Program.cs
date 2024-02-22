@@ -2,9 +2,10 @@
 {
     private static void Main(string[] args)
     {
-        BasicHashing hashing = new();
-        string input = "dammmmzyz";
-        hashing.Max_Min_Chars(input);
+        int[] array = new int[]{1,5,4,3,2};
+        Sorting sorting = new();
+        var sortedArray = sorting.BubbleSort(array);
+        Console.WriteLine(string.Join("",sortedArray));
     }
     
 }
