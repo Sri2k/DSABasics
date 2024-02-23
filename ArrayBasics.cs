@@ -1,3 +1,5 @@
+using System.Collections;
+
 public class ArrayBasics{
 
     // Quick Sort, Merge Sort,... etc these works with O(nlogn)
@@ -67,6 +69,71 @@ public class ArrayBasics{
         return secondLargest;
     }
 
+    // O(n)
+    public bool IsSorted(int[] array){
+        int i=0;
+        while(i<array.Length-1){
+            if(array[i]>array[i+1]){
+                return false;
+            }
+            i++;
+        }
+        return true;
+    }
+
+    // O(n) iterations , space => O(n)
+    public int[] RemoveDuplicates(int[] array){
+        // HashSet<int> ints = new HashSet<int>();
+        // for(int i=0;i<array.Length;i++){
+        //     ints.Add(array[i]);
+        // }
+        // return ints.ToArray();
+        return new HashSet<int>(array).ToArray();
+    }
+
+    // same as above but O(n^2) just for seaching (Contains Method) 
+    public int[] RemoveDuplicatesV1(int[] array){
+        List<int> list = new();
+        for(int i=0;i<array.Length;i++){
+            if(!list.Contains(array[i])){
+                list.Add(array[i]);
+            }
+        }
+        return list.ToArray();
+    }
+
+    // Worst way of doing
+    public int[] RemoveDuplicatesV2(int[] array){
+        int length =0;
+        int[] result = new int[length];
+        int j =0;
+        for(int i=0;i<array.Length;i++){
+            if(!IsExist(result,array[i])){
+                Array.Resize(ref result, length+1);
+                result[j] = array[i];
+                length++;
+                j++;
+            }
+        }
+        return result;
+    }
+
+    private bool IsExist(int[] array,int target){
+        int i =0 ;
+        while(i < array.Length){
+            if(array[i]==target){
+                return true;
+            }
+            i++;
+        }
+        return false;   
+    }
 
 
-}
+
+
+
+
+
+
+    }

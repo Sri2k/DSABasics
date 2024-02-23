@@ -2,9 +2,9 @@
 {
     private static void Main(string[] args)
     {
-        int[] array = new int[]{14,9,12,6,8,14,14,13};
+        int[] array = new int[]{8,8,9,11,12,13,13,14,11};
         ArrayBasics arrayBasics = new ArrayBasics();
-        var result = arrayBasics.SecondLargestElementInArrayV2(array);
+        var result = arrayBasics.RemoveDuplicatesV2(array);
         Console.WriteLine(result);
 
 
