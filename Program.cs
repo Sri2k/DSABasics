@@ -2,17 +2,17 @@
 {
     private static void Main(string[] args)
     {
-        int[] array = new int[]{8,8,9,11,12,13,13,14,11};
+        int[] array = new int[]{1, 0 ,3, 0, 0, 4, 5 , 0 , 0};
+
+        int[] arr1 = { 1, 1, 0, 1, 1, 1 };
+        int[] arr2 = { 1, 0, 1, 1, 0, 1 };
         ArrayBasics arrayBasics = new ArrayBasics();
-        var result = arrayBasics.RemoveDuplicatesV2(array);
+        var result = arrayBasics.maxConsecutiveOneV1(arr1);
         Console.WriteLine(result);
 
 
 
 
-        // Sorting sorting = new();
-        // var sortedArray = sorting.InsertionSort(array);
-        // Console.WriteLine(string.Join("",sortedArray));
     }
     
 }
