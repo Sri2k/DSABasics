@@ -371,7 +371,6 @@ public class ArrayBasics
             if(array[i] == 1)
                 counter++;
             else{
-                previousMaxCount = counter > previousMaxCount ? counter : previousMaxCount;
                 counter = 0;
             }
             i++;

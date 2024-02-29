@@ -7,7 +7,7 @@
         int[] arr1 = { 1, 1, 0, 1, 1, 1 };
         int[] arr2 = { 1, 0, 1, 1, 0, 1 };
         ArrayBasics arrayBasics = new ArrayBasics();
-        var result = arrayBasics.maxConsecutiveOneV1(arr1);
+        var result = arrayBasics.maxConsecutiveOneV1(arr2);
         Console.WriteLine(result);
 
 
